@@ -1,7 +1,7 @@
 // Author: Et8an, http://www.youtube.com/user/Et8an
 // Date : 12-Mar-2013
 // Description: This sketch controls an Android's camera by Bluetooth. It uses a TV remote as an input from the user. 
-//              Arduino sends different commands to Android then Arduino expects a response from Android.
+//              It recieves inputs from the TV remote and sends it to an Android then it expects an acknowledgment from Android.
 //              LED shows the state of Arduino in this manner: 
 //              YELLOW: bluetooth is looking for a device to connect to
 //              GREEN: bluetooth established a connection
