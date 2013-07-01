@@ -1,13 +1,11 @@
 phoneOnServo
 ============
 <p dir="RTL">
-لرؤية المشروع اضغط هنا http://www.youtube.com/watch?v=a-1L8vMyuBA
+لرؤية المشروع: اضغط هنا http://www.youtube.com/watch?v=a-1L8vMyuBA
 </p>
 
-============
-
-<p dir="RTL"><strong>تعليمات الإستخدام</strong>:</p>
-
+<h2 dir="RTL">تعليمات الإستخدام</h3>
+<h3 dir="RTL">أندرويد:</h3>
 <p dir="RTL"> في﻿ ملف Main.java الخاص بالأندرويد قم بتعديل الآتي:</p>
  
 <p dir="RTL">
@@ -23,9 +21,20 @@ Log.d("UUID", "My UUID is: " + uuid);
 <p dir="RTL">
 وبعدها اذهب إلى سطر 40 أو ابحث عن "String address" وقم بكتابة MAC Address الخاص بقطعة البلوتوث.
 </p>
+<h3 dir="RTL">أردوينو:</h3>
+<p dir="RTL">
+<p dir="RTL">انسخ ملف IRemote والموجود في مجلد Microcontroller/libraries والصقه في مجلد مكتبات الأردوينو والموجود في الغالب (أو في مجلد أخر إذا قمت بتغيره عند تنصيب الأردوينو) في: "C:\Program Files (x86)\Arduino\libraries"
+</p>
+<p dir="RTL">ملاحظة: إذا كنت تمتلك ريموت تلفاز من شركة أخرى غير شركة سوني تحتاج إلى فعل الآتي:<p>
+<p dir="RTL">قم بتشغيل هذا المثال IRrecvDemo.ino والموجود في هذا الرابط IRremote / examples / IRrecvDemo / IRrecvDemo.ino وتأكد من أن مستقبل أشعة الإنفراريد موصول بـ Pin 11. عند ضغط أي زر في ريموت التلفاز سيظهر الكود الخاص بالزر في شاشة Serial Monitor الخاصة بالأردوينو. سجل الأكواد التي تهمك واكتب قيمها في ملف phone_servo.ino الموجود في مجلد  Microcontroller / phone_servo / phone_servo.ino في هذا السطر
+<br>
+enum {
+    RIGHT = 3280, LEFT = 720, UP = 752, DOWN = 2800, PICTURE = 3928, VIDEO = 1488, FACE = 14318, CAMERAON = 2704, TOOLS = 14057, NOTHING = 0, DONOTHING = -1,
+<br>
+لاحظ أن كل كود أعلاه يمثل قيمة زر في ريموت شركة سوني. 
 
-================
-<p dir="RTL"><strong>القطع المستخدمة</strong>:</p>
+
+<h2 dir="RTL">القطع المستخدمة:</h2>
 <p dir="RTL">
 - أردوينو (أنا أستخدمت نفس المايكروكنترولر الموجود في الأردوينو)
 <br>
